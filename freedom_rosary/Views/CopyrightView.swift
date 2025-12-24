@@ -1,5 +1,5 @@
 //
-//  FavoritesView.swift
+//  CopyrightView.swift
 //  freedom_rosary
 //
 //  Created by Charles Michael on 12/23/25.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct FavoritesView: View {
+struct CopyrightView: View {
     var body: some View {
-        Text("Favorites Page")
+        Text("Copyright Page")
     }
 }
 
 #Preview {
-    FavoritesView()
+    CopyrightView()
 }
