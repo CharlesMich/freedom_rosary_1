@@ -76,6 +76,8 @@ struct NotesView: View {
             WhyReadTheBibleView()
         case "Prayers in the Rosary":
             RosaryPrayersView()
+        case "Closing Prayers":
+            ClosingPrayersView()
         default:
             Text("\(link) Content Here")
                 .font(fontSize.font)
