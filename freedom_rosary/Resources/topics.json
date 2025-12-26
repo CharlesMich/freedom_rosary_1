@@ -1,6 +1,6 @@
 [
-    {"name": "Joyful Mysteries"},
-    {"name": "Sorrowful Mysteries"},
-    {"name": "Glorious Mysteries"},
-    {"name": "Luminous Mysteries"}
+    {"name": "Joyful Mysteries", "jsonFileName": "joyful"},
+    {"name": "Sorrowful Mysteries", "jsonFileName": "sorrowful"},
+    {"name": "Glorious Mysteries", "jsonFileName": "glorious"},
+    {"name": "Luminous Mysteries", "jsonFileName": "luminous"}
 ]

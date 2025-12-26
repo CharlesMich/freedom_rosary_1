@@ -26,7 +26,7 @@ struct NotesView: View {
             ScrollView {
                 VStack(spacing: 0) {
                     ForEach(links.indices, id: \.self) { index in
-                        NavigationLink(destination: Text("\(links[index]) Content Here").font(fontSize.font)) {
+                        NavigationLink(destination: destinationView(for: links[index])) {
                             Text(links[index])
                                 .font(fontSize.font)
                                 .fontWeight(.regular)
@@ -62,6 +62,24 @@ struct NotesView: View {
                     }
                 }
             }
+        }
+    }
+    
+    @ViewBuilder
+    private func destinationView(for link: String) -> some View {
+        switch link {
+        case "How to pray the Rosary":
+            HowToPrayRosaryView()
+        case "Why we should pray the Rosary":
+            WhyToPrayRosaryView()
+        case "Why should we read the Bible":
+            WhyReadTheBibleView()
+        case "Prayers in the Rosary":
+            RosaryPrayersView()
+        default:
+            Text("\(link) Content Here")
+                .font(fontSize.font)
+                .padding()
         }
     }
 }

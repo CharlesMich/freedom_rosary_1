@@ -7,9 +7,38 @@
 
 import SwiftUI
 
+struct TopicRow: View {
+    let topic: Topic
+    let font: Font
+    let color: Color
+
+    var body: some View {
+        VStack(spacing: 0) {
+            NavigationLink {
+                RosaryDetailView(title: topic.name, fileName: topic.jsonFileName)
+            } label: {
+                Text(topic.name)
+                    .font(font)
+                    .fontWeight(.regular)
+                    .foregroundColor(color)
+                    .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+
+            Divider()
+                .background(color)
+        }
+    }
+}
+
+
 struct TopicsView: View {
 
-    private let topics: [Topic] = TopicLoader.load()
+    private let topics: [Topic]
+
+    init(topics: [Topic] = TopicLoader.load()) {
+        self.topics = topics
+    }
 
     @Environment(\.colorScheme) var colorScheme
 
@@ -25,21 +54,11 @@ struct TopicsView: View {
             ScrollView {
                 VStack(spacing: 0) {
                     ForEach(topics) { topic in
-                        NavigationLink {
-                            // Replace with VersionView / DetailView when ready
-                            Text("\(topic.name) Content Here")
-                                .font(fontSize.font)
-                        } label: {
-                            Text(topic.name)
-                                .font(fontSize.font)
-                                .fontWeight(.regular)
-                                .foregroundColor(colorScheme == .dark ? .white : .black)
-                                .padding()
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                        }
-
-                        Divider()
-                            .background(colorScheme == .dark ? Color.white : Color.black)
+                        TopicRow(
+                            topic: topic,
+                            font: fontSize.font,
+                            color: colorScheme == .dark ? .white : .black
+                        )
                     }
                 }
                 .background(colorScheme == .dark ? Color.black : Color.white)
@@ -69,14 +88,19 @@ struct TopicsView: View {
     }
 }
 
-
 struct TopicsView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            TopicsView()
+        let mockTopics = [
+            Topic(name: "Joyful Mysteries", jsonFileName: "joyful"),
+            Topic(name: "Sorrowful Mysteries", jsonFileName: "sorrowful"),
+            Topic(name: "Glorious Mysteries", jsonFileName: "glorious")
+        ]
+        
+        return Group {
+            TopicsView(topics: mockTopics)
                 .preferredColorScheme(.light)
-
-            TopicsView()
+            
+            TopicsView(topics: mockTopics)
                 .preferredColorScheme(.dark)
         }
     }
