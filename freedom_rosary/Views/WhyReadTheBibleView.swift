@@ -62,35 +62,35 @@ struct WhyReadTheBibleView: View {
         ),
         (
             title: "11. We receive direction and counsel in life",
-            verse: "Having cast away all uncleanness and an abundance of wickedness, receive with meekness the implanted Word, which is able to save your souls. (Jas 1:21)"
+            verse: "The book of this law shall not depart from your mouth. Instead, you shall meditate upon it, day and night, so that you may observe and do all the things that are written in it. Then you shall direct your way and understand it. (Josh 1:8)"
         ),
         (
             title: "12.  God’s promise of eternal life when we read the Bible",
-            verse: "Having cast away all uncleanness and an abundance of wickedness, receive with meekness the implanted Word, which is able to save your souls. (Jas 1:21)"
+            verse: "This is the book of the commandments of God and of the law, which exists in eternity. All those who keep it will attain to life, but those who have forsaken it, to death. (Bar 4:1)"
         ),
         (
             title: "13. God’s Word fills us with hope",
-            verse: "Having cast away all uncleanness and an abundance of wickedness, receive with meekness the implanted Word, which is able to save your souls. (Jas 1:21)"
+            verse: "Whatever was written, was written to teach us, so that, through patience and the consolation of the Scriptures, we might have hope. (Rom 15:4)"
         ),
         (
             title: "14. God’s Word increases our faith",
-            verse: "Having cast away all uncleanness and an abundance of wickedness, receive with meekness the implanted Word, which is able to save your souls. (Jas 1:21)"
+            verse: "Faith comes from what is heard, and what is heard comes through the word of Christ. (Rom 10:17)"
         ),
         (
             title: "15.  God’s Word comforts us in our distress",
-            verse: "Having cast away all uncleanness and an abundance of wickedness, receive with meekness the implanted Word, which is able to save your souls. (Jas 1:21)"
+            verse: "This is my comfort in my distress: for your promises gives me life. (Ps 119:50)"
         ),
         (
             title: "16. Deliverance from evil",
-            verse: "Having cast away all uncleanness and an abundance of wickedness, receive with meekness the implanted Word, which is able to save your souls. (Jas 1:21)"
+            verse: "He sent his word, and healed them, and delivered them from their destructions. (Ps 107:20)"
         ),
         (
             title: "17. We receive healing ",
-            verse: "Having cast away all uncleanness and an abundance of wickedness, receive with meekness the implanted Word, which is able to save your souls. (Jas 1:21)"
+            verse: "Indeed, neither an herb, nor a poultice, healed them, but your word, O Lord, which heals all. (Wis 16:12)"
         ),
         (
             title: "18. God’s Word fills us with joy",
-            verse: "Having cast away all uncleanness and an abundance of wickedness, receive with meekness the implanted Word, which is able to save your souls. (Jas 1:21)"
+            verse: "I discovered your words and I consumed them. And your word became to me as the gladness and joy of my heart. For your name has been invoked over me, O Lord, the God of hosts. (Jer 15:16)"
         ),
     ]
 
