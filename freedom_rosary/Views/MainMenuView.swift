@@ -43,11 +43,12 @@ struct MainMenuView: View {
                     }
                     divider()
 
-                    externalLink(
-                        title: "Paperback (Amazon Store)",
-                        url: "https://amazon.com/your-paperbacks"
-                    )
-
+                    NavigationLink {
+                        PaperbackView()
+                    } label: {
+                        rowView(title: "Paperback")
+                    }
+                    divider()
                     externalLink(
                         title: "Amazon Author Page",
                         url: "https://www.amazon.com/stores/Charles-Michael/author/B07SMB94PD"
