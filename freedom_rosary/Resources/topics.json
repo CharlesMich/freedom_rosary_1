@@ -1,6 +1,11 @@
 [
-    {"name": "Joyful Mysteries", "jsonFileName": "joyful"},
-    {"name": "Sorrowful Mysteries", "jsonFileName": "sorrowful"},
-    {"name": "Glorious Mysteries", "jsonFileName": "glorious"},
-    {"name": "Luminous Mysteries", "jsonFileName": "luminous"}
+    {"name": "Joyful Mysteries", "jsonFileName": "joyful", "whoShouldMeditate": ""},
+    {"name": "Sorrowful Mysteries", "jsonFileName": "sorrowful", "whoShouldMeditate": ""},
+    {"name": "Glorious Mysteries", "jsonFileName": "glorious", "whoShouldMeditate": ""},
+    {"name": "Luminous Mysteries", "jsonFileName": "luminous", "whoShouldMeditate": ""},
+    {"name": "Anger", "jsonFileName": "anger", "whoShouldMeditate": "Yet you must go on steadily in all those things that you have learned and which you know are true. Remember from what sort of people your knowledge has come, and how from early childhood your mind has been familiar with the holy scriptures, which can open the mind to the salvation which comes through believing in Christ Jesus. All scripture is inspired by God and is useful for teaching the faith and correcting error, for re-setting the direction of a man’s life and training him in good living. The scriptures are the comprehensive equipment of the man of God and fit him fully for all branches of his work."},
+    {
+        "name": "Spiritual Dryness (Word of God)",
+        "jsonFileName": "word",
+        "whoShouldMeditate": "This Scriptural Rosary is for anyone who does not read the Bible daily or regularly, so their hearts can be drawn back to a consistent encounter with God. It is especially important for those who struggle with doubts about whether the Bible is truly the Word of God. It is also for those who have not yet experienced the full power of Scripture in transforming their lives, so they may discover its living and active nature. Above all, it is for all who desire a deeper understanding of God and Jesus, because through God’s Word we come to know His truth, His will, and His love more clearly."},
 ]

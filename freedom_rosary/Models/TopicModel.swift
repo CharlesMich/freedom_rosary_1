@@ -11,6 +11,7 @@ struct Topic: Identifiable, Codable {
     let name: String
     var id: String { name }
     let jsonFileName: String
+    let whoShouldMeditate: String
 }
 
 

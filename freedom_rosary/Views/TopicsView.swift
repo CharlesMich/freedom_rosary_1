@@ -15,7 +15,7 @@ struct TopicRow: View {
     var body: some View {
         VStack(spacing: 0) {
             NavigationLink {
-                RosaryDetailView(title: topic.name, fileName: topic.jsonFileName)
+                RosaryDetailView(topic: topic)
             } label: {
                 Text(topic.name)
                     .font(font)
@@ -91,10 +91,22 @@ struct TopicsView: View {
 struct TopicsView_Previews: PreviewProvider {
     static var previews: some View {
         let mockTopics = [
-            Topic(name: "Joyful Mysteries", jsonFileName: "joyful"),
-            Topic(name: "Sorrowful Mysteries", jsonFileName: "sorrowful"),
-            Topic(name: "Glorious Mysteries", jsonFileName: "glorious")
-        ]
+                   Topic(
+                       name: "Joyful Mysteries",
+                       jsonFileName: "joyful",
+                       whoShouldMeditate: ""
+                   ),
+                   Topic(
+                       name: "Anger",
+                       jsonFileName: "anger",
+                       whoShouldMeditate: "Those who struggle with anger and impatience..."
+                   ),
+                   Topic(
+                       name: "Patience",
+                       jsonFileName: "patience",
+                       whoShouldMeditate: "Those who desire growth in perseverance..."
+                   )
+               ]
         
         return Group {
             TopicsView(topics: mockTopics)
