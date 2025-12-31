@@ -5,8 +5,14 @@
 //  Created by Charles Michael on 12/23/25.
 //
 
+//
+//  TopicsView.swift
+//  freedom_rosary
+//
+
 import SwiftUI
 
+// MARK: - Row
 struct TopicRow: View {
     let topic: Topic
     let font: Font
@@ -19,7 +25,6 @@ struct TopicRow: View {
             } label: {
                 Text(topic.name)
                     .font(font)
-                    .fontWeight(.regular)
                     .foregroundColor(color)
                     .padding()
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -31,7 +36,7 @@ struct TopicRow: View {
     }
 }
 
-
+// MARK: - Topics View
 struct TopicsView: View {
 
     private let topics: [Topic]
@@ -40,8 +45,10 @@ struct TopicsView: View {
         self.topics = topics
     }
 
-    @Environment(\.colorScheme) var colorScheme
+    @Environment(\.colorScheme) private var colorScheme
+    @State private var searchText: String = ""
 
+    // Font size
     @AppStorage(AppStorageKeys.fontSize)
     private var fontSizeRaw: String = FontSize.small.rawValue
 
@@ -49,11 +56,23 @@ struct TopicsView: View {
         FontSettings.font(from: fontSizeRaw)
     }
 
+    // MARK: - Filtered Topics
+    private var filteredTopics: [Topic] {
+        guard !searchText.isEmpty else { return topics }
+
+        let query = searchText.lowercased()
+
+        return topics.filter { topic in
+            topic.name.lowercased().contains(query) ||
+            topic.keywords.contains { $0.lowercased().contains(query) }
+        }
+    }
+
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: 0) {
-                    ForEach(topics) { topic in
+                    ForEach(filteredTopics) { topic in
                         TopicRow(
                             topic: topic,
                             font: fontSize.font,
@@ -64,10 +83,14 @@ struct TopicsView: View {
                 .background(colorScheme == .dark ? Color.black : Color.white)
             }
             .navigationTitle("Topics")
+            .searchable(
+                text: $searchText,
+                placement: .navigationBarDrawer(displayMode: .always),
+                prompt: "Search topics or keywords"
+            )
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        // Cycle through font sizes
                         switch fontSizeRaw {
                         case FontSize.small.rawValue:
                             fontSizeRaw = FontSize.medium.rawValue
@@ -80,7 +103,6 @@ struct TopicsView: View {
                         Image(systemName: "textformat")
                             .imageScale(.large)
                             .scaleEffect(FontSize(rawValue: fontSizeRaw)?.scale ?? 1.0)
-                            .frame(width: 28, height: 28)
                     }
                 }
             }
@@ -88,32 +110,40 @@ struct TopicsView: View {
     }
 }
 
-struct TopicsView_Previews: PreviewProvider {
-    static var previews: some View {
-        let mockTopics = [
-                   Topic(
-                       name: "Joyful Mysteries",
-                       jsonFileName: "joyful",
-                       whoShouldMeditate: ""
-                   ),
-                   Topic(
-                       name: "Anger",
-                       jsonFileName: "anger",
-                       whoShouldMeditate: "Those who struggle with anger and impatience..."
-                   ),
-                   Topic(
-                       name: "Patience",
-                       jsonFileName: "patience",
-                       whoShouldMeditate: "Those who desire growth in perseverance..."
-                   )
-               ]
-        
-        return Group {
-            TopicsView(topics: mockTopics)
-                .preferredColorScheme(.light)
-            
-            TopicsView(topics: mockTopics)
-                .preferredColorScheme(.dark)
-        }
+#Preview {
+    let mockTopics: [Topic] = [
+        Topic(
+            name: "Joyful Mysteries",
+            jsonFileName: "joyful",
+            whoShouldMeditate: "",
+            keywords: ["joy", "incarnation", "mary", "nativity"]
+        ),
+        Topic(
+            name: "Anger",
+            jsonFileName: "anger",
+            whoShouldMeditate: "Those who struggle with anger and impatience.",
+            keywords: ["anger", "rage", "temper", "resentment"]
+        ),
+        Topic(
+            name: "Patience",
+            jsonFileName: "patience",
+            whoShouldMeditate: "Those seeking perseverance and calm.",
+            keywords: ["patience", "waiting", "endurance"]
+        ),
+        Topic(
+            name: "Spiritual Dryness (Word of God)",
+            jsonFileName: "word",
+            whoShouldMeditate: "For those longing to reconnect with Scripture.",
+            keywords: ["scripture", "bible", "dryness", "word of god"]
+        )
+    ]
+
+    return Group {
+        TopicsView(topics: mockTopics)
+            .preferredColorScheme(.light)
+
+        TopicsView(topics: mockTopics)
+            .preferredColorScheme(.dark)
     }
 }
+

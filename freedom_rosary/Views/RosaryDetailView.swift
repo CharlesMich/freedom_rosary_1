@@ -258,7 +258,7 @@ struct RosaryDetailView: View {
 
     NavigationStack {
         RosaryDetailView(
-            topic: Topic(name: "Anger", jsonFileName: "anger", whoShouldMeditate: "Yet you must go on steadily in all those things that you have learned…"),
+            topic: Topic(name: "Anger", jsonFileName: "anger", whoShouldMeditate: "Yet you must go on steadily in all those things that you have learned…",  keywords: ["anger", "rage", "temper"]),
             loadedVerses: mockVerses,
             loadedMysteries: mockMysteries
         )
