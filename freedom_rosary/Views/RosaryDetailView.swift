@@ -6,6 +6,9 @@
 import SwiftUI
 
 struct RosaryDetailView: View {
+    
+    @EnvironmentObject private var favoritesStore: FavoritesStore
+
 
     let topic: Topic
     var loadedVerses: [RosaryVerse]? = nil
@@ -212,13 +215,19 @@ struct RosaryDetailView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
+                    favoritesStore.toggleFavorite(topic)
+                } label: {
+                    Image(systemName: favoritesStore.isFavorite(topic) ? "heart.fill" : "heart")
+                        .foregroundColor(favoritesStore.isFavorite(topic) ? .red : .primary)
+                }
+            }
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
                     switch fontSizeRaw {
-                    case FontSize.small.rawValue:
-                        fontSizeRaw = FontSize.medium.rawValue
-                    case FontSize.medium.rawValue:
-                        fontSizeRaw = FontSize.large.rawValue
-                    default:
-                        fontSizeRaw = FontSize.small.rawValue
+                    case FontSize.small.rawValue: fontSizeRaw = FontSize.medium.rawValue
+                    case FontSize.medium.rawValue: fontSizeRaw = FontSize.large.rawValue
+                    default: fontSizeRaw = FontSize.small.rawValue
                     }
                 } label: {
                     Image(systemName: "textformat")
@@ -227,6 +236,7 @@ struct RosaryDetailView: View {
                 }
             }
         }
+
         // MARK: iOS 16+ Navigation to Closing Prayers
         .navigationDestination(isPresented: $navigateToClosingPrayers) {
             ClosingPrayersView()
@@ -262,5 +272,6 @@ struct RosaryDetailView: View {
             loadedVerses: mockVerses,
             loadedMysteries: mockMysteries
         )
+        .environmentObject(FavoritesStore())
     }
 }

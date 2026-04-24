@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var favoritesStore = FavoritesStore()
+    
     var body: some View {
         TabView {
 
@@ -35,6 +38,7 @@ struct ContentView: View {
                     Text("Favorites")
                 }
         }
+        .environmentObject(favoritesStore)
     }
 }
 

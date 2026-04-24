@@ -13,21 +13,36 @@
 import SwiftUI
 
 // MARK: - Row
+import SwiftUI
+
 struct TopicRow: View {
     let topic: Topic
     let font: Font
     let color: Color
+    let isFavorite: Bool
 
     var body: some View {
         VStack(spacing: 0) {
             NavigationLink {
                 RosaryDetailView(topic: topic)
             } label: {
-                Text(topic.name)
-                    .font(font)
-                    .foregroundColor(color)
-                    .padding()
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                HStack {
+                    Text(topic.name)
+                        .font(font)
+                        .fontWeight(.regular)
+                        .foregroundColor(color)
+
+                    Spacer()
+
+                    // ❤️ Subtle favorite indicator
+                    if isFavorite {
+                        Image(systemName: "heart.fill")
+                            .font(.caption)
+                            .foregroundColor(.red.opacity(0.7))
+                    }
+                }
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .leading)
             }
 
             Divider()
@@ -35,6 +50,7 @@ struct TopicRow: View {
         }
     }
 }
+
 
 // MARK: - Topics View
 struct TopicsView: View {
@@ -44,7 +60,8 @@ struct TopicsView: View {
     init(topics: [Topic] = TopicLoader.load()) {
         self.topics = topics
     }
-
+    
+    @EnvironmentObject private var favoritesStore: FavoritesStore
     @Environment(\.colorScheme) private var colorScheme
     @State private var searchText: String = ""
 
@@ -76,7 +93,8 @@ struct TopicsView: View {
                         TopicRow(
                             topic: topic,
                             font: fontSize.font,
-                            color: colorScheme == .dark ? .white : .black
+                            color: colorScheme == .dark ? .white : .black,
+                            isFavorite: favoritesStore.isFavorite(topic)
                         )
                     }
                 }
@@ -116,34 +134,36 @@ struct TopicsView: View {
             name: "Joyful Mysteries",
             jsonFileName: "joyful",
             whoShouldMeditate: "",
-            keywords: ["joy", "incarnation", "mary", "nativity"]
+            keywords: ["joy", "incarnation", "mary"]
         ),
         Topic(
             name: "Anger",
             jsonFileName: "anger",
-            whoShouldMeditate: "Those who struggle with anger and impatience.",
-            keywords: ["anger", "rage", "temper", "resentment"]
+            whoShouldMeditate: "Those who struggle with anger.",
+            keywords: ["anger", "rage", "temper"]
         ),
         Topic(
             name: "Patience",
             jsonFileName: "patience",
-            whoShouldMeditate: "Those seeking perseverance and calm.",
-            keywords: ["patience", "waiting", "endurance"]
-        ),
-        Topic(
-            name: "Spiritual Dryness (Word of God)",
-            jsonFileName: "word",
-            whoShouldMeditate: "For those longing to reconnect with Scripture.",
-            keywords: ["scripture", "bible", "dryness", "word of god"]
+            whoShouldMeditate: "Those seeking perseverance.",
+            keywords: ["patience", "endurance"]
         )
     ]
 
-    return Group {
-        TopicsView(topics: mockTopics)
-            .preferredColorScheme(.light)
+    let favoritesStore = FavoritesStore()
 
-        TopicsView(topics: mockTopics)
-            .preferredColorScheme(.dark)
+    return Group {
+        NavigationStack {
+            TopicsView(topics: mockTopics)
+        }
+        .environmentObject(favoritesStore)
+        .preferredColorScheme(.light)
+
+        NavigationStack {
+            TopicsView(topics: mockTopics)
+        }
+        .environmentObject(favoritesStore)
+        .preferredColorScheme(.dark)
     }
 }
 
