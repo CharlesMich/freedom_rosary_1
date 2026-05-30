@@ -11,6 +11,7 @@ import SwiftUI
 struct freedom_rosaryApp: App {
     var body: some Scene {
         WindowGroup {
+//            MainMenuView()
             ContentView()
         }
     }
