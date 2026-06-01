@@ -88,19 +88,20 @@
     },
     {
         "name": "Marital Problems, Divorce, Separation",
-        "jsonFileName": "",
+        "jsonFileName": "marital",
         "whoShouldMeditate": "This Rosary can be prayed by couples experiencing problems in their marriage, including constant arguments, misunderstanding, lack of communication, loss of trust, emotional distance, resentment, infidelity, thoughts of separation, or the possibility of divorce. It is also helpful for those struggling with unforgiveness, lack of patience, or wounds caused by conflict and disappointment. Through prayer and meditation on Scripture, hearts can grow in love, humility, forgiveness, faithfulness, understanding, and trust in God, seeking healing, reconciliation, and renewed unity within marriage.", "keywords": []
     },
     {
-        "name": "Rejection, Loneliness, Abandonment",
-        "jsonFileName": "",
-        "whoShouldMeditate": "This Rosary can be prayed by people experiencing rejection, abandonment, loneliness, isolation, betrayal, neglect, or feelings of being unloved and unwanted. It is also helpful for those wounded by broken relationships, separation, grief, or the loss of friendship and companionship. Through prayer and meditation on Scripture, hearts can grow in hope, healing, trust, and awareness of God’s constant presence and unfailing love, learning that they are never forgotten, forsaken, or alone in the eyes of the Lord.", "keywords": []
-    },
-    {
         "name": "Pride, Arrogance, Haughtiness",
-        "jsonFileName": "",
+        "jsonFileName": "pride",
         "whoShouldMeditate": "This Rosary can be prayed by people struggling with pride, arrogance, haughtiness, vanity, self-exaltation, stubbornness, contempt for others, or a spirit of mockery and ridicule. It is also helpful for those who seek attention, glorify themselves, look down on others, or resist correction and humility. Through prayer and meditation on Scripture, hearts can grow in meekness, humility, charity, wisdom, and reverence for God, learning to honor others, to serve rather than exalt themselves, and to walk in humility before the Lord. ", "keywords": []
     },
+    {
+        "name": "Rejection, Loneliness, Abandonment",
+        "jsonFileName": "rejection",
+        "whoShouldMeditate": "This Rosary can be prayed by people experiencing rejection, abandonment, loneliness, isolation, betrayal, neglect, or feelings of being unloved and unwanted. It is also helpful for those wounded by broken relationships, separation, grief, or the loss of friendship and companionship. Through prayer and meditation on Scripture, hearts can grow in hope, healing, trust, and awareness of God’s constant presence and unfailing love, learning that they are never forgotten, forsaken, or alone in the eyes of the Lord.", "keywords": []
+    },
+    
     {
         "name": "Selfishness, Self-centeredness",
         "jsonFileName": "",
