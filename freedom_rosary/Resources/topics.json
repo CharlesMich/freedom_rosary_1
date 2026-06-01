@@ -3,37 +3,177 @@
     {"name": "Sorrowful Mysteries", "jsonFileName": "sorrowful", "whoShouldMeditate": "", "keywords": ["mystery"]},
     {"name": "Glorious Mysteries", "jsonFileName": "glorious", "whoShouldMeditate": "", "keywords": ["mystery"]},
     {"name": "Luminous Mysteries", "jsonFileName": "luminous", "whoShouldMeditate": "", "keywords": ["mystery"]},
-    {"name": "Anger", "jsonFileName": "anger", "whoShouldMeditate": "", "keywords": ["short temper", "quick temper", "strife", "quarrel", "patience"]},
+    
     
     {
         "name": "Abortion, Prochoice",
         "jsonFileName": "abortion",
-        "whoShouldMeditate": "", "keywords": []
+        "whoShouldMeditate": "This Rosary can be prayed by people who are contemplating abortion, people who aid or perform abortion, people who have pro-choice beliefs, and people who do not understand God’s plan for life, marriage, and procreation. It is also meant for anyone seeking clarity, conversion of heart, or a deeper understanding of the dignity of human life, so that prayer may lead to healing, truth, and compassion for all involved", "keywords": []
     },
+    {
+        "name": "Anger",
+        "jsonFileName": "anger",
+        "whoShouldMeditate": "This Rosary can be prayed by people struggling with uncontrollable anger, angry outbursts, rage, resentment, bitterness, hostility, desires for revenge, impatience, a short temper, a quick temper, harsh speech, frustration, or hatred. It is also helpful for those wounded by anger in families, friendships, marriages, or workplaces, and for anyone seeking peace, patience, gentleness, and greater mastery over their emotions. Through prayer and meditation on Scripture, hearts can be softened and guided toward forgiveness, charity, and the peace of Christ.",
+        "keywords": ["short temper", "quick temper", "strife", "quarrel", "patience"]},
     {
         "name": "Anxiety, Worry, Stress",
         "jsonFileName": "anxiety",
-        "whoShouldMeditate": "", "keywords": []},
-    {"name": "Spiritual Dryness (Holy Spirit)", "jsonFileName": "holyspirit", "whoShouldMeditate": "", "keywords": ["Holy Ghost", "Pentecost"]
+        "whoShouldMeditate": "This Rosary can be prayed by people struggling with anxiety, worry, stress, panic, sleeplessness, or uncertainty about the future. It is especially helpful for those burdened by worries about finances, health, family, children, marriage, work, relationships, or daily responsibilities. Through prayer and meditation on Scripture, hearts are encouraged to surrender every care into God’s hands, to place their faith and trust in him, and to find peace, strength, and hope in his loving providence and faithful care.", "keywords": []
     },
+    
     {
         "name": "Complaining, Ingratitude",
         "jsonFileName": "complain",
-        "whoShouldMeditate": "", "keywords": []
+        "whoShouldMeditate": "This Rosary can be prayed by people struggling with ingratitude, thanklessness, constant complaining, discontentment, or failure to recognize God’s blessings. It is helpful for those who focus more on difficulties than on God’s goodness, mercy, and daily provision. Through prayer and meditation on Scripture, hearts can grow in gratitude, humility, contentment, and trust in God, learning to praise him in all circumstances and to recognize the many blessings he lovingly pours out each day", "keywords": []
     },
     {
         "name": "Demonic Attacks",
         "jsonFileName": "demonic",
-        "whoShouldMeditate": "", "keywords": []
+        "whoShouldMeditate": "This Rosary can be prayed by people experiencing spiritual oppression, torment, or other demonic attacks, and by those seeking deliverance from demons and evil spirits. It is also helpful for anyone desiring greater spiritual protection, freedom, and deeper trust in the power of God. Through prayer and meditation on Scripture, hearts are strengthened in faith, encouraged to remain close to Christ, and reminded that the Lord is victorious over every power of darkness.", "keywords": []
     },
     {
         "name": "Depression, Sorrow, Sadness, Suicidal thoughts",
         "jsonFileName": "depression",
-        "whoShouldMeditate": "", "keywords": []
+        "whoShouldMeditate": "This Rosary can be prayed by people struggling with depression, sorrow, sadness, grief, or emotional heaviness. Through prayer and meditation on Scripture, hearts can find comfort, strength, hope, and peace in God’s love, learning to trust in his presence even in times of darkness and sorrow.", "keywords": []
     },
     {
-        "name": "Spiritual Dryness (Word of God)",
-        "jsonFileName": "word",
-        "whoShouldMeditate": "", "keywords": []
+        "name": "Disobedience, Stubbornness, Rebelliousness",
+        "jsonFileName": "disobedience",
+        "whoShouldMeditate": "This Rosary is helpful for children who do not submit to their parents’ discipline, as well as for anyone rejecting correction, instruction, or guidance. It can also be prayed by people struggling with disobedience, stubbornness, rebellion, defiance, or resistance to God’s will and rightful authority.", "keywords": []
+    },
+    {
+        "name": "Envy, Jealousy, Competitiveness",
+        "jsonFileName": "envy",
+        "whoShouldMeditate": "This Rosary can be prayed by people struggling with envy, jealousy, unhealthy competitiveness, comparison, resentment, selfish ambition, insecurity, or bitterness toward the blessings and success of others. It is also helpful for those seeking freedom from pride, covetousness, and discontentment. Through prayer and meditation on Scripture, hearts can grow in humility, gratitude, charity, and trust in God’s plan, learning to rejoice in the good of others and to find peace and contentment in the blessings God has given them.", "keywords": []
+    },
+    {
+        "name": "Fear, Shyness, Phobias",
+        "jsonFileName": "fear",
+        "whoShouldMeditate": "This Rosary can be prayed by people struggling with fear, anxiety, panic, various phobias, timidity, shyness, social anxiety, insecurity, or lack of confidence. Through prayer and meditation on Scripture, hearts can grow in courage, peace, confidence, and trust in God, learning to rely on his strength and to walk in faith rather than fear.", "keywords": []
+    },
+    {
+        "name": "Financial Problems, debt, unemployment",
+        "jsonFileName": "finance",
+        "whoShouldMeditate": "This Rosary can be prayed by people struggling with financial problems, debt, loans, unemployment, loss of savings, inadequate income, poverty, unpaid bills, or uncertainty about providing for themselves or their families. It is also helpful for those burdened by financial stress, instability, or fear about the future. Through prayer and meditation on Scripture, hearts can grow in trust, perseverance, wisdom, and hope, learning to rely on God’s providence and faithful care in every need and difficulty.", "keywords": []
+    },
+    {
+        "name": "Greed, Love of Money, Stinginess",
+        "jsonFileName": "greed",
+        "whoShouldMeditate": "This Rosary can be prayed by people struggling with the love of money, greed, materialism, selfish ambition, covetousness, or obsession with wealth and possessions. It is also helpful for those who resort to dishonest or illegal ways of making money, or who are consumed by gambling, betting, lotteries, unhealthy stock speculation, or other money-related addictions. Through prayer and meditation on Scripture, hearts can grow in honesty, contentment, generosity, trust in God, and freedom from the desire for riches, learning to seek first the kingdom of God above worldly gain.", "keywords": []
+    },
+    {
+        "name": "Guilt, Regret, Shame, Self Hatred, Unworthiness",
+        "jsonFileName": "guilt",
+        "whoShouldMeditate": "This Rosary can be prayed by people struggling with guilt, regret, shame, self-condemnation, or painful memories of past sins and actions. It is also helpful for those who feel unworthy of God’s love, unable to forgive themselves, or burdened by sorrow, failure, and remorse. Through prayer and meditation on Scripture, hearts can grow in repentance, healing, hope, and trust in God’s mercy, learning to accept his forgiveness, to let go of the past, and to find peace in the love and grace of Christ.", "keywords": []
+    },
+    {
+        "name": "Hopelessness, Despair",
+        "jsonFileName": "hopelessness",
+        "whoShouldMeditate": "This Rosary can be prayed by people experiencing hopelessness, despair, or discouragement. It is also helpful for those weighed down by suffering, disappointment, failure, or a sense of spiritual darkness. Through prayer and meditation on Scripture, hearts can be strengthened with hope, peace, courage, and trust in God’s unfailing love, learning to persevere in faith and to remember that the Lord remains near even in the darkest moments of life.", "keywords": []
+    },
+    {
+        "name": "Identity Crisis, purpose of life",
+        "jsonFileName": "identity",
+        "whoShouldMeditate": "This Rosary can be prayed by people experiencing an identity crisis, confusion about their purpose, insecurity, lack of direction, or uncertainty about God’s will for their lives. It is also helpful for those struggling to understand their vocation, calling, gifts, or place in the world. Through prayer and meditation on Scripture, hearts can grow in wisdom, confidence, trust, and a deeper awareness of their identity in God, learning to seek his guidance and to walk faithfully in the purpose for which they were created.", "keywords": []
+    },
+    {
+        "name": "Laziness, Tiredness, Sloth",
+        "jsonFileName": "laziness",
+        "whoShouldMeditate": "This Rosary can be prayed by people struggling with laziness, sloth, procrastination, lethargy, constant sleepiness, tiredness, low motivation, lack of discipline, or lack of drive to fulfill their responsibilities. It is also helpful for those who delay important tasks, waste time, neglect duties, or feel spiritually and emotionally sluggish. Through prayer and meditation on Scripture, hearts can grow in diligence, perseverance, self-control, zeal, and a renewed desire to use their time, talents, and strength faithfully for God and for others.", "keywords": []
+    },
+    {
+        "name": "Lust, Sexual Sins",
+        "jsonFileName": "lust",
+        "whoShouldMeditate": "This Rosary can be prayed by people struggling with lust, pornography, masturbation, adultery, fornication, promiscuity, immodesty, impure thoughts, sexual temptations, flirtations that lead to sin, or disordered sexual desires, including homosexual inclinations. It is also helpful for those under the power of sexual sins such as incest, rape, abuse, or other grave forms of impurity and exploitation. Through prayer and meditation on Scripture, hearts can grow in purity, self-control, repentance, healing, chastity, and reverence for the dignity of the human person, learning to honor God with both body and soul.", "keywords": []
+    },
+    {
+        "name": "Marital Problems, Divorce, Separation",
+        "jsonFileName": "",
+        "whoShouldMeditate": "This Rosary can be prayed by couples experiencing problems in their marriage, including constant arguments, misunderstanding, lack of communication, loss of trust, emotional distance, resentment, infidelity, thoughts of separation, or the possibility of divorce. It is also helpful for those struggling with unforgiveness, lack of patience, or wounds caused by conflict and disappointment. Through prayer and meditation on Scripture, hearts can grow in love, humility, forgiveness, faithfulness, understanding, and trust in God, seeking healing, reconciliation, and renewed unity within marriage.", "keywords": []
+    },
+    {
+        "name": "Rejection, Loneliness, Abandonment",
+        "jsonFileName": "",
+        "whoShouldMeditate": "This Rosary can be prayed by people experiencing rejection, abandonment, loneliness, isolation, betrayal, neglect, or feelings of being unloved and unwanted. It is also helpful for those wounded by broken relationships, separation, grief, or the loss of friendship and companionship. Through prayer and meditation on Scripture, hearts can grow in hope, healing, trust, and awareness of God’s constant presence and unfailing love, learning that they are never forgotten, forsaken, or alone in the eyes of the Lord.", "keywords": []
+    },
+    {
+        "name": "Pride, Arrogance, Haughtiness",
+        "jsonFileName": "",
+        "whoShouldMeditate": "This Rosary can be prayed by people struggling with pride, arrogance, haughtiness, vanity, self-exaltation, stubbornness, contempt for others, or a spirit of mockery and ridicule. It is also helpful for those who seek attention, glorify themselves, look down on others, or resist correction and humility. Through prayer and meditation on Scripture, hearts can grow in meekness, humility, charity, wisdom, and reverence for God, learning to honor others, to serve rather than exalt themselves, and to walk in humility before the Lord. ", "keywords": []
+    },
+    {
+        "name": "Selfishness, Self-centeredness",
+        "jsonFileName": "",
+        "whoShouldMeditate": "This Rosary can be prayed by people struggling with selfishness, self-centeredness, self-glory, self-exaltation, pride, vanity, or an excessive desire for attention, praise, and recognition. It is also helpful for those who place their own desires above the needs of others or seek to please themselves rather than God.", "keywords": []
+    },
+    {
+        "name": "Sickness",
+        "jsonFileName": "",
+        "whoShouldMeditate": "This Rosary can be prayed by people suffering from physical and mental illnesses, chronic pain, incurable illness, or other health conditions, and by those seeking healing from God. It is also helpful for those who feel weak, overwhelmed, or burdened by illness in body or mind, as well as for caregivers who carry the weight of caring for the sick. Through prayer and meditation on Scripture, hearts can grow in hope, peace, strength, and trust in God’s healing presence, whether through restoration, endurance, or grace to carry the cross with faith.", "keywords": []
+    },
+    {
+        "name": "Sin",
+        "jsonFileName": "",
+        "whoShouldMeditate": "This Rosary can be prayed by people who do not understand the seriousness of sin, who have become desensitized to wrongdoing, or who are living in habitual or unrepentant sinful lifestyles. It is also helpful for those who struggle with a weak conscience, spiritual blindness, or a lack of awareness of how sin separates them from God’s grace and love. Through prayer and meditation on Scripture, hearts can grow in repentance, wisdom, and a deeper understanding of sin, leading to conversion, renewed faith, and a sincere desire to turn away from evil and walk in God’s ways.", "keywords": []
+    },
+    {
+        "name": "Speech",
+        "jsonFileName": "",
+        "whoShouldMeditate": "This Rosary can be prayed by people who struggle with the misuse of speech, including lying, gossiping, slander, harsh criticism, cursing, profanity, or speaking in ways that harm others. It is also helpful for those who seek purification of their words and a conversion of heart regarding how they speak.", "keywords": []
+    },
+    {
+        "name": "Spiritual Dryness (Confession)",
+        "jsonFileName": "",
+        "whoShouldMeditate": "This Rosary can be prayed by people who do not understand the role of the Sacrament of Confession in their salvation, who are uncertain about the need to confess sins to a priest, or who struggle to believe in the importance of sacramental reconciliation. It is also helpful for those who have been away from confession or who do not yet grasp how Christ works through the sacrament.", "keywords": []
+    },
+    {
+        "name": "Spiritual Dryness (God, the Father)",
+        "jsonFileName": "",
+        "whoShouldMeditate": "This Rosary can be prayed by people who are unsure about God the Father, who struggle to understand his love and care, or who do not believe in him as creator and father of all. It is also for those who feel distant from God, who see him as far away or unapproachable, or who have difficulty trusting his will in their lives. Through this Rosary, hearts are invited to grow in awareness of God the Father’s goodness, mercy, and providence. He is revealed as the one who creates, sustains, and lovingly guides his children, offering forgiveness, protection, and fatherly care. In prayer and reflection, believers are drawn into a deeper trust in his will, learning to rest in his love and to live as His sons and daughters in faith, hope, and obedience.", "keywords": []
+    },
+    {
+        "name": "Spiritual Dryness (Jesus)",
+        "jsonFileName": "",
+        "whoShouldMeditate": "This Rosary can be prayed by people who are unsure about who Jesus is, who do not believe in him as Lord and Savior, or who struggle to understand His life, death, and resurrection. It is also for those who feel distant from him, who have lost trust in him, or who desire to know him more deeply but do not yet understand how. Through this Rosary, hearts are invited to encounter Jesus personally, to reflect on His love, mercy, and sacrifice, and to grow in faith and trust in him. Jesus draws each person closer to himself, offering forgiveness, healing, and new life, and leading them into a deeper relationship with him as the source of truth, hope, and salvation.", "keywords": []
+    },
+    {
+        "name": "Spiritual Dryness (Prayer)",
+        "jsonFileName": "",
+        "whoShouldMeditate": "This Rosary can be prayed by people who do not know how to pray, or who struggle to believe that God hears them. It is also for those who rarely pray, who feel distracted or distant from God, or who find prayer difficult, dry, or confusing.", "keywords": []
+    },
+    {
+        "name": "Spiritual Dryness (The Eucharist & Holy Mass)",
+        "jsonFileName": "",
+        "whoShouldMeditate": "This Rosary can be prayed by people who are unsure about the meaning of the Eucharist and the Holy Mass, who do not believe in the Real Presence of Christ in the Eucharist, or who rarely attend Mass and struggle to understand its purpose and importance. It is also for those who feel distant from the Church, who find worship routine or confusing, or who desire a deeper reverence for God in communal prayer. Through reflection on the mystery of the Eucharist and the Holy Mass, hearts are invited into a deeper awareness of Christ’s sacrifice and His living presence among His people. In the celebration of the Mass and the reception of the Eucharist with faith, believers are nourished with grace, strengthened in love, forgiven of sins, and drawn into deeper communion with God and the Church, learning to live more fully in unity with Christ and His will.", "keywords": []
+    },
+    {
+        "name": "Spiritual Dryness (The Holy Spirit)",
+        "jsonFileName": "",
+        "whoShouldMeditate": "This rosary can be prayed by people who are unsure about the Holy Spirit’s presence, who do not believe in him, or who struggle to understand who he is and how he works in the life of a believer. It is also for those who rarely pray, who feel distant from God, or who desire a deeper awareness of his guidance and power. Through prayer and openness of heart, the Holy Spirit brings comfort, conviction, wisdom, and peace, leading people into truth and helping them grow in faith, love, and obedience to God. He strengthens what is weak, teaches what is unclear, and draws the soul closer to God’s will, shaping a life that reflects God’s presence and goodness.", "keywords": []
+    },
+    {
+        "name": "Spiritual Dryness (The Word of God)",
+        "jsonFileName": "",
+        "whoShouldMeditate": "This Rosary can be prayed by people who do not believe that the Bible is the Word of God, who rarely or never read Scripture, or who struggle to understand its meaning and importance. It is also helpful for those seeking a deeper love for God’s Word and a closer relationship with him through prayerful reading of Scripture. Through prayer and meditation on the Bible, hearts can grow in faith, wisdom, understanding, and love for God, learning to hear his voice and to live according to his truth and guidance.", "keywords": []
+    },
+    {
+        "name": "Substance Addictions",
+        "jsonFileName": "",
+        "whoShouldMeditate": "This Rosary can be prayed by people struggling with substance addictions such as smoking, vaping, alcohol, drugs, misuse of medication, overeating, chewing tobacco, or other harmful dependencies that affect the body, mind, and soul. It is also helpful for those battling compulsive habits, cravings, relapse, or feelings of helplessness and shame. Through prayer and meditation on Scripture, hearts can grow in self-control, healing, perseverance, freedom, and trust in God’s strength, learning to seek lasting peace and fulfillment in Christ rather than in destructive habits or substances.", "keywords": []
+    },
+    {
+        "name": "Unbelief, Doubt, Atheism",
+        "jsonFileName": "",
+        "whoShouldMeditate": "This Rosary can be prayed by people struggling with unbelief, atheism, agnosticism, doubt, skepticism, spiritual confusion, or indifference toward God and the Christian faith. It is also helpful for those searching for truth, questioning the existence of God, or wrestling with intellectual, emotional, or spiritual obstacles to faith. Through prayer and meditation on Scripture, hearts can grow in understanding, openness, humility, and trust, coming to encounter God’s truth, love, and presence more deeply and to respond to him with faith and conviction.", "keywords": []
+    },
+    {
+        "name": "Unforgiveness",
+        "jsonFileName": "",
+        "whoShouldMeditate": "This Rosary can be prayed by people struggling with unforgiveness, bitterness, resentment, hatred, wounded memories, or a desire for revenge. It is also helpful for those holding grudges, unable to let go of past hurts, or carrying deep pain caused by betrayal, rejection, abuse, injustice, or broken relationships.", "keywords": []
+    },
+    {
+        "name": "Worldliness, Media Addiction",
+        "jsonFileName": "",
+        "whoShouldMeditate": "This Rosary can be prayed by people struggling with worldliness, attachment to worldly pleasures, hedonism, vanity, or excessive love for entertainment and distraction. It is also helpful for those battling social media addiction, internet addiction, television addiction, unhealthy attachment to music, party culture, or habits that draw their hearts away from God and spiritual life. Through prayer and meditation on Scripture, hearts can grow in self-control, purity, detachment, wisdom, and love for God, learning to seek heavenly things above temporary pleasures and distractions of the world.", "keywords": []
     }
 ]
